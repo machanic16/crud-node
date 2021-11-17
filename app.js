@@ -4,7 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 // Routes
-const helloWorldRoutes = require("./routes/hello-world");
+const crudUserRoutes = require("./routes/crud-user");
 
 // POST - PUT we receive like req.body
 // GET - DELETE req.params
@@ -23,6 +23,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/api", helloWorldRoutes);
+app.use("/api", crudUserRoutes);
 
 module.exports = app;
