@@ -8,6 +8,7 @@ const crudUserRoutes = require("./routes/crud-user");
 
 // POST - PUT we receive like req.body
 // GET - DELETE req.params
+
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 app.use(cors());
